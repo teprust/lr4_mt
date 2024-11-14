@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lr_4.HelloController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="Файл">
+                  <items>
+                    <MenuItem fx:id="openMenuItem" mnemonicParsing="false" onAction="#handleOpenMenuItemAction" text="Открыть" />
+                        <MenuItem fx:id="videlyator" mnemonicParsing="false" onAction="#videlyatorClick" text="Выделить" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+         <center>
+            <HTMLEditor fx:id="htmlEditor" accessibleRole="HYPERLINK" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" prefHeight="200.0" prefWidth="506.0" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <TextField fx:id="txtField" layoutX="4.0" layoutY="92.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <TextField fx:id="txtField_way" layoutX="4.0" layoutY="79.0" />
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
